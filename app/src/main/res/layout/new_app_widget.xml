@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#09C"
+    android:padding="@dimen/widget_margin"
+    android:id="@+id/topw"
+    >
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/appwidget_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="8dp"
+        android:background="#09C"
+        android:contentDescription="@string/appwidget_text"
+        android:text="@string/appwidget_text"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/maplayoutw" >
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:context="com.triton.aquadrops.LocateShop" /></LinearLayout>
+
+    <ListView
+        android:id="@+id/addresslist"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="2dp"
+        android:background="#dddddd"
+        android:visibility="visible">
+
+    </ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="visible"
+        >
+        <LinearLayout
+            android:id="@+id/bottum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <TextView
+                    android:layout_margin="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+android:visibility="gone"
+                    android:text="Address:"
+                    android:textColor="#000000"/>
+                <TextView
+                    android:layout_margin="4dp"
+                    android:id="@+id/address_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text=" No 4, Bhuvaneswar strre, Tanki - 620001"
+                    android:textColor="#000000"/>
+                <TextView
+                    android:layout_margin="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Mobile Number:"
+                    android:textColor="#555555"/>
+                <TextView
+                    android:layout_margin="4dp"
+                    android:id="@+id/contacts_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="  "
+android:visibility="gone"
+                    android:textColor="#555555"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ECEFF1"
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom"
+                android:gravity="bottom">
+
+                <Button
+                    android:id="@+id/previous"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:text=" "
+                    android:textSize="10dp"
+                    android:background="@drawable/left"
+
+                    />
+                <TextView
+                    android:id="@+id/leftcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="8dp"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+
+                    />
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+                    <Button
+                        android:id="@+id/selectedvendor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:text="select"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/rightcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="#000000"
+                    android:textSize="8dp"
+
+                    />
+                <Button
+                    android:id="@+id/next"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:text="  "
+                    android:textSize="10dp"
+                    android:background="@drawable/right"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

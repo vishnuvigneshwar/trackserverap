@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/PrimaryColor1">
+
+    <!--<LinearLayout
+        android:background="@drawable/spalsh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+
+    <!--#FFDB3C-->
+    <!--android:background="@drawable/water_backimg"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/ll_layout"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/logo"
+            android:src="@drawable/aquadroplogo"/>
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="10dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:textColor="#FFFFFF"
+        android:text="www.theaquadrop.com"/>
+
+</RelativeLayout>
+
+

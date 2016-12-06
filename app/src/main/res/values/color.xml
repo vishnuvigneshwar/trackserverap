@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="PrimaryColor">#000000</color>
+    <color name="PrimaryColor1">#ffdb3c</color>
+    <color name="PrimaryDarkColor">#DDD9D9</color>
+    <color name="toolbar_color">#4875b9</color>
+
+    <color name="app_color">#D9C01D</color>
+    <color name="dark_gray">#3D3D3C</color>
+    <color name="dark_gray_unselect">#81817F</color>
+    <color name="light_gray">#f3f1f1</color>
+    <color name="light_gray_border">#878686</color>
+    <color name="light_gray_transperancy">#bf878686</color>
+    <color name="light_yellow">#DFD389</color>
+    <color name="yellow_unselect">#F2E8A8</color>
+    <color name="layout_background">#FFFFFF</color>
+    <color name="button_white">#ECEFF1</color>
+    <color name="text_color"> #1a1a1a</color>
+    <color name="text_hintcolor">#808080</color>
+    <color name="greytextcolor">#9e9e9e</color>
+    <color name="black">#070707</color>
+    <color name="drawer_gray">#8c8c8c</color>
+    <color name="gray">#474646</color>
+    <color name="background">#e6e6e6</color>
+
+</resources>
